@@ -27,6 +27,8 @@
     "@nestjs/platform-express": "^7.0.0",
     "amqp-connection-manager": "^3.2.0",
     "amqplib": "^0.6.0",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.12.2",
     "moment-timezone": "^0.5.31",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
