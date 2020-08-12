@@ -18,7 +18,8 @@ export class AppController {
 
   @Post('categories')
   @UsePipes(ValidationPipe)
-  async createCategory(@Body() createCategoryDto: CreateCategoryDto) {
-    return await this.clientAdminBackend.emit('create-category', createCategoryDto);
+  createCategory(@Body() createCategoryDto: CreateCategoryDto) {
+    this.clientAdminBackend.emit('create-category', createCategoryDto);
   }
+
 }
