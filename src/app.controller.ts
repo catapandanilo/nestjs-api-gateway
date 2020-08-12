@@ -20,7 +20,7 @@ export class AppController {
   @Post('categories')
   @UsePipes(ValidationPipe)
   createCategory(@Body() createCategoryDto: CreateCategoryDto) {
-    this.clientAdminBackend.emit('create-category', createCategoryDto);
+    return this.clientAdminBackend.emit('create-category', createCategoryDto);
   }
 
   @Get('categories')
